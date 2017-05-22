@@ -3,10 +3,13 @@
     "type": "composer-plugin",
     "license": "MIT",
     
-    "version": "0.0.1",
+    "version": "0.1.1",
 
     "extra": {
-        "class": "\\Ninebost\\Component\\Symfony\\Console\\BashCompletion\\BashCompletionPlugin"
+        "class": "\\Ninebost\\Component\\Symfony\\Console\\BashCompletion\\ArtisanBashCompletionPlugin",
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
     },
 
     "require": {

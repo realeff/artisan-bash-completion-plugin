@@ -7,6 +7,7 @@ use Stecman\Component\Symfony\Console\BashCompletion\Completion;
 
 class ArtisanCompletionCommand extends CompletionCommand
 {
+    
     protected function runCompletion()
     {
         $context = $this->handler->getContext();
@@ -22,7 +23,7 @@ class ArtisanCompletionCommand extends CompletionCommand
                 function() use ($application) {
                     $names = array_keys($application->all());
 
-                    if ($key = array_search('_artisan', $names)) {
+                    if ($key = array_search('_completion', $names)) {
                         unset($names[$key]);
                     }
 

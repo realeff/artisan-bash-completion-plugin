@@ -9,7 +9,7 @@ use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Input\ArrayInput;
 
-class BashCompletionPlugin implements PluginInterface
+class ArtisanBashCompletionPlugin implements PluginInterface
 {
     /**
      * @var \Symfony\Component\Console\Input\ArgvInput
@@ -24,12 +24,13 @@ class BashCompletionPlugin implements PluginInterface
         global $__bashCompletionInjected;
 
         // Inject completion command when the command line is `composer depends _artisan`
-        if ($argv[1] == 'depends' && $argv[2] == '_artisan' && !$__bashCompletionInjected) {
+        if ($argv[1] == 'depends' && $argv[2] == '_completion' && !$__bashCompletionInjected) {
             $__bashCompletionInjected = true;
 
             // Drop the original command name argument so that "_artisan" takes its place
-            $argv[0] = 'php';
-            $argv[1] = 'artisan';
+            //$argv[0] = 'php';
+            //$argv[1] = 'artisan';
+            //$argv[2] =  '_completion';
             $input = new ArgvInput($argv);
 
             $application->add(new ArtisanCompletionCommand());
