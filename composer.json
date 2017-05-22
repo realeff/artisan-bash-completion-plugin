@@ -5,13 +5,6 @@
     
     "version": "0.1.1",
 
-    "extra": {
-        "class": "\\Ninebost\\Component\\Symfony\\Console\\BashCompletion\\ArtisanBashCompletionPlugin",
-        "branch-alias": {
-            "dev-master": "0.1.x-dev"
-        }
-    },
-
     "require": {
         "composer-plugin-api": "^1.0",
         "stecman/symfony-console-completion": "~0.7.0"
@@ -21,5 +14,11 @@
     	"psr-4": {
     		"Ninebost\\Component\\Symfony\\Console\\BashCompletion\\": "src"
     	}
+    },
+
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
     }
 }
