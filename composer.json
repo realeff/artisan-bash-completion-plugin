@@ -1,6 +1,6 @@
 {
     "name": "ninebost/artisan-bash-completion-plugin",
-    "type": "artisan-plugin",
+    "type": "composer-plugin",
     "license": "MIT",
     
     "version": "0.0.1",
