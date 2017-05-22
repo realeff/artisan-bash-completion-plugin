@@ -1,0 +1,22 @@
+{
+    "name": "ninebost/artisan-bash-completion-plugin",
+    "type": "artisan-plugin",
+    "license": "MIT",
+    
+    "version": "0.0.1",
+
+    "extra": {
+        "class": "\\Ninebost\\Component\\Symfony\\Console\\BashCompletion\\BashCompletionPlugin"
+    },
+
+    "require": {
+        "composer-plugin-api": "^1.0",
+        "stecman/symfony-console-completion": "~0.7.0"
+    },
+
+    "autoload": {
+    	"psr-4": {
+    		"Ninebost\\Component\\Symfony\\Console\\BashCompletion\\": "src"
+    	}
+    }
+}
