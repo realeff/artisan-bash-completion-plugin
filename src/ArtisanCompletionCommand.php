@@ -35,4 +35,14 @@ class ArtisanCompletionCommand extends CompletionCommand
         return $this->handler->runCompletion();
     }
 
+	/**
+	 * Execute the console command.
+	 *
+	 * @return void
+	 */
+	public function fire()
+	{
+		$possibleCommands = $this->runCompletion();
+		echo implode(' ', $possibleCommands);
+	}
 }

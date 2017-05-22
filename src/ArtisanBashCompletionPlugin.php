@@ -28,9 +28,10 @@ class ArtisanBashCompletionPlugin implements PluginInterface
             $__bashCompletionInjected = true;
 
             // Drop the original command name argument so that "_artisan" takes its place
-            //$argv[0] = 'php';
-            //$argv[1] = 'artisan';
-            //$argv[2] =  '_completion';
+            $argv[0] = '/usr/bin/php';
+            $argv[1] = 'artisan';
+            $argv[2] =  '_completion';
+            array_splice($argv, 1, 1);
             $input = new ArgvInput($argv);
 
             $application->add(new ArtisanCompletionCommand());
