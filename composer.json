@@ -4,15 +4,13 @@
     "keywords": ["completion", "artisan", "laravel"],
     "license": "MIT",
 
-    "require": {
-        "stecman/symfony-console-completion": "~0.7.0"
+    "extra": {
+        "class": "\\BaiSam\\Component\\Symfony\\Console\\BashCompletion\\ArtisanBashCompletionPlugin"
     },
 
-    "extra": {
-        "class": "\\BaiSam\\Component\\Symfony\\Console\\BashCompletion\\ArtisanBashCompletionPlugin",
-        "branch-alias": {
-            "dev-master": "1.0-dev"
-        }
+    "require": {
+        "composer-plugin-api": "^1.0",
+        "stecman/symfony-console-completion": "~0.7.0"
     },
 
     "autoload": {
