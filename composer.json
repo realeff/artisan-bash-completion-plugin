@@ -1,8 +1,7 @@
 {
     "name": "ninebost/artisan-bash-completion-plugin",
-    "description": "Artisan Component for the Laravel framework.",
-    "keywords": ["artisan", "laravel"],
-    "type": "composer-plugin",
+    "description": "Artisan Completion for the Laravel framework.",
+    "keywords": ["completion", "artisan", "laravel"],
     "license": "MIT",
 
     "require": {
