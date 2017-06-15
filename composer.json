@@ -1,16 +1,8 @@
 {
     "name": "ninebost/artisan-bash-completion-plugin",
-    "type": "composer-plugin",
+    "description": "Artisan Component for the Laravel framework.",
+    "keywords": ["artisan", "laravel"],
     "license": "MIT",
-    
-    "version": "0.1.1",
-
-    "extra": {
-        "class": "\\Ninebost\\Component\\Symfony\\Console\\BashCompletion\\ArtisanBashCompletionPlugin",
-        "branch-alias": {
-            "dev-master": "0.1.x-dev"
-        }
-    },
 
     "require": {
         "composer-plugin-api": "^1.0",
@@ -21,5 +13,11 @@
     	"psr-4": {
     		"Ninebost\\Component\\Symfony\\Console\\BashCompletion\\": "src"
     	}
-    }
+    },
+    "extra": {
+        "class": "\\Ninebost\\Component\\Symfony\\Console\\BashCompletion\\ArtisanBashCompletionPlugin",
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
 }
