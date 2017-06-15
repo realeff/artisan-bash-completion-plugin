@@ -4,13 +4,13 @@ This is an experimental hack to add [Symfony BASH auto complete](https://github.
 
 ## Installation
 
-1. Run `composer require ninebost/artisan-bash-completion-plugin dev-master`
+1. Run `composer require baisam/artisan-bash-completion-plugin dev-master`
 2. Add a completion class to App\Console\Kernel :
 
     ```php
     # The Artisan commands provided by your application.
     protected $commands = [
-            Ninebost\Component\Symfony\Console\BashCompletion\ArtisanCompletionCommand::class,
+            BaiSam\Component\Symfony\Console\BashCompletion\ArtisanCompletionCommand::class,
         ];
     ```
 
