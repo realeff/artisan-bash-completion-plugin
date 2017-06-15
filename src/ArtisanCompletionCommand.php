@@ -1,6 +1,6 @@
 <?php
 
-namespace Ninebost\Component\Symfony\Console\BashCompletion;
+namespace BaiSam\Component\Symfony\Console\BashCompletion;
 
 use Stecman\Component\Symfony\Console\BashCompletion\CompletionCommand;
 use Stecman\Component\Symfony\Console\BashCompletion\Completion;
