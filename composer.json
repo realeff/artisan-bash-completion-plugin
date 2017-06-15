@@ -14,10 +14,11 @@
     		"Ninebost\\Component\\Symfony\\Console\\BashCompletion\\": "src"
     	}
     },
+    
     "extra": {
         "class": "\\Ninebost\\Component\\Symfony\\Console\\BashCompletion\\ArtisanBashCompletionPlugin",
         "branch-alias": {
             "dev-master": "1.0-dev"
         }
-    },
+    }
 }
