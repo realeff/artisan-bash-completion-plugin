@@ -10,7 +10,7 @@ This is an experimental hack to add [Symfony BASH auto complete](https://github.
     ```php
     # The Artisan commands provided by your application.
     protected $commands = [
-            BaiSam\Component\Symfony\Console\BashCompletion\ArtisanCompletionCommand::class,
+            \BaiSam\Component\Symfony\Console\BashCompletion\ArtisanCompletionCommand::class,
         ];
     ```
 
